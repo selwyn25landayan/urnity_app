@@ -9,7 +9,7 @@ def main():
    
     @st.cache_resource
     def load_model():
-        model = tf.keras.models.load_model('test_tube_classifier.hdf5')
+        model = tf.keras.models.load_model('weights-improvement-50-0.94.hdf5')
         return model
     
     def import_and_predict(image_data, model):
